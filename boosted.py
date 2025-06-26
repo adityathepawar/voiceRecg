@@ -238,6 +238,14 @@ with col2:
         st.session_state.is_recording = False
         st.success("Recording stopped and saved.")
 
+st.markdown("## 📤 Or Upload a .wav File")
+
+uploaded_file = st.file_uploader("Upload a .wav file", type=["wav"])
+if uploaded_file is not None:
+    with open(FILENAME, "wb") as f:
+        f.write(uploaded_file.read())
+    st.success(f"✅ Uploaded audio saved as `{FILENAME}`")
+
 st.markdown("---")
 
 if st.button("📝 Transcribe Audio"):
