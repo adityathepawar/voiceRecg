@@ -13,7 +13,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Constants
 FILENAME = "audio.wav"
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 MODEL = "deepseek/deepseek-chat:free"
 
 # Session State Initialization
