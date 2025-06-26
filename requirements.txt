@@ -1,0 +1,10 @@
+streamlit
+sounddevice
+numpy
+scipy            
+wave             
+SpeechRecognition
+threading       
+requests
+editdistance
+scikit-learn
